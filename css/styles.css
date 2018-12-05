@@ -109,21 +109,7 @@ body{
 	background-origin: green;
 }
 
-#mycontainer{
 
-	
-	background-image: url("../image/contact-form.jpg");
-	background-position: center;
-	background-width-size: 500px;
-	height: 500px;
-	position: 0,0 relative;
-	/*/*background-color: white;*/
-	background-repeat: no-repeat; 
-	border-radius: 5px;
-	width: 100%;
-	margin: 0px;
-	color: white;
-}
 #mycontainer2{
 
     
@@ -138,6 +124,23 @@ body{
     width: 100%;
     margin: 0px;
     color: white;
+}
+
+
+#mycontainer{
+
+	
+	background-image: url("../image/contact-form.jpg");
+	background-position: center;
+	background-width-size: 500px;
+	height: 500px;
+	position: 0,0 relative;
+	/*/*background-color: white;*/
+	background-repeat: no-repeat; 
+	border-radius: 5px;
+	width: 100%;
+	margin: 0px;
+	color: white;
 }
 
 .othercontainter{
