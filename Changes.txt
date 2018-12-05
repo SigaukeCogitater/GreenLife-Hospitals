@@ -1,0 +1,47 @@
+<-------------------------Start Home Work One---------------------------->
+
+	We made a wire fram for the entire website.
+	We also made the website organisation chart.
+		
+<---------------------------/Home Work One------------------------------->
+
+<-------------------------Start Home Work Two---------------------------->
+
+	We created a knew directory for our website.
+	In the folder we followed a basic structure of putting image, css, and javascript folder.
+	We downloaded and put jquery and bootstrap javascrip and css libraries in their respective folders.
+	We used a lot of online lessons from platforms such as coursera, youtube, w3 schools in order to implement some of the things we did not know e.t.c
+	We chose bootstrap because of it's awesome grid and fluid functions which allowed us to create a fluid layout without 
+	worry much of css @media querry.
+	It also helped us remove some defalt browser elements.
+	However we created our own stles.css to override the imported style sheets.
+	Created the about, home, contact us, staff, weekly schedule, and department pages.
+	We manage to create a navigation bar and some main content for the entire website.
+	Right now we will be working of some content and interactivity of the website.
+
+<---------------------------/Home Work Two-------------------------------->
+
+<---------------------------Home Work Three------------------------------->
+        We added content to the home page,
+	Added pictures and linked to the home page, The links on picture link back to the home page but
+	will link to their respective pages after we created the other pages.
+	Used free pictures from https://unsplash.com/
+	Added footer to the homepage and the about page - this will be pasted to the other pages,
+	Created a contact form in the contact page and a php script to handle the events,
+	Graphic designed all the subpages in the about web page,
+	We used javascript to display all the pages after a click in the department vertical nav bar,
+	We put all informatioin regardint the department, but we will add more as we move on.
+	We have finished a lot of the structure, we are only left with copying most of the code and changing 
+	contents to match the other pages. 
+	We will do that in homework five.
+<---------------------------/Home Work Three------------------------------>	
+ 
+<----------------------------Home Work Four------------------------------->
+	We added pages of the Hospital's medical school
+	We put Research, Addmision, About and News pages to our Medical School sub-website which
+	is connected to the main website.
+	We added a video of censer screening to the home and fixed the problem with the slider in the department/message.
+	We removed some pages and joined other pages together.
+	We added library, pediatrics, oB/Gyn, doctor, cardiology and staff
+
+<----------------------------/Home Work Four------------------------------->
