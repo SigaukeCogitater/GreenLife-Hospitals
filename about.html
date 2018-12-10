@@ -1,0 +1,504 @@
+<!-- This is a first example of using a template -->
+
+<head>
+
+<!-- include our libraries and css files -->
+  <title>GreenLife Hospitals</title>
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/handlebars-v3.0.3.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/gallery.css" rel="stylesheet">
+  <link href="css/styles.css" type="text/css" rel="stylesheet">
+    <link href="css/image.css" type="text/css" rel="stylesheet">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+    
+<!-- FlexSlider -->
+  <script defer src="js/jquery.flexslider.js"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+    
+<!-- FlexSlider -->
+  <script defer src="js/jquery.flexslider.js"></script>
+    
+<script type="text/javascript">
+    // Can also be used with $(document).ready()
+$(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: "slide"
+  });
+});
+//    $(function(){
+//      SyntaxHighlighter.all();
+//    });
+//    $(window).load(function(){
+//      $('.flexslider').flexslider({
+//        animation: "slide",
+//        start: function(slider){
+//          $('body').removeClass('loading');
+//        }
+//      });
+//    });
+  </script>
+
+
+
+
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div> <h2 id="pass2">GreenLife Hospitals</h2></div>
+      <!-- -- start collapsed navbar -- -->
+      <div class="navbar-header">
+        <button type="button" 
+              class="navbar-toggle collapsed" 
+              data-toggle="collapse" 
+              data-target="#main_navbar" 
+              aria-expanded="false">
+              <!-- <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span> -->
+          Menu
+        </button>
+      </div>
+      <!-- -- / collapsed navbar -- -->
+
+      <!-- -- start uncollapsed navbar -- -->
+      <div class="collapse navbar-collapse" 
+        id="main_navbar">
+        <ul class="nav navbar-nav" >
+          <li ><a href="index.html" >Home</a> </li>
+          <li class="active"><a href="about.html">About</a> </li>
+          <li><a href="department.html">Department</a> </li>
+          <li><a href="staff.html">Staff and Library</a> </li>
+ 
+        </ul>
+      </div>
+      <!-- -- end uncollapsed navbar -- -->
+    </div>
+  </nav>
+   <div class="container">
+    
+
+    <div id="myhomepage2">
+      <div class="row">
+      <div>
+          <!-- -- start breadcrumb -- -->
+        <ol class="breadcrumb"> 
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+        </ol>
+        <!-- -- / breadcrumb --  -->
+
+      </div>
+      <div class="col-xs-12 col-md-3">
+        <!-- <div class="thumbnail"> -->
+          <ul class="list-group navlist">
+            <li id="about1" class="list-group-item navigate"> <a href="#">Contact us</a></li>
+            <li id="about2" class="list-group-item navigate"> <a href="#">Location</a> </li>
+            <li id="about3" class="list-group-item navigate"> <a href="#">Career</a></li>
+            <li id="about4" class="list-group-item navigate"> <a href="#">Message</a> </li>
+          </ul>
+        <!-- </div> -->
+      </div>
+      <div class="col-xs-12 col-md-9 ">
+    <!-- the content of the web page starts off empty
+     because we will fill it later from the template -->
+        <div>
+          
+        </div>
+        <div id="content" class="mainViewer container-fluid"  role="main">
+        </div>
+
+        <section class="slider">
+<div class="flexslider" style="border: 1px solid red;">
+  <ul class="slides">
+    <li>
+      <img src="image/img_about1.jpg" />
+    </li>
+    <li>
+      <img src="image/img_hbms3.jpg" />
+    </li>
+    <li>
+      <img src="image/img_doc1.jpg" />
+    </li>
+    <li>
+      <img src="image/img_doc2.jpg" />
+    </li>
+    <li>
+      <img src="image/img_gyn1.jpg" />
+    </li>
+  </ul>
+</div>
+<div class="custom-navigation">
+    <a href="#" class="flex-prev">Prev</a>
+    <div class="custom-controls-container"></div>
+          <a href="#" class="flex-next">Next</a>
+</div>
+</section>
+        
+      </div>
+    </div>
+  </div>
+  </div>
+  <footer class="myfooter">
+      <div class="row">
+        <div class="col-xs-12 col-md-3">
+          <div id="buttons">
+              <div class="facebook button">
+                <i class="icon">
+                  <i class="fa fa-facebook"></i>
+                  </i>
+                  <div class="slide">
+                  <p> Facebook </p>
+
+              </div>
+
+                <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fenablingwp%2F&width=62&layout=button&action=like&size=large&show_faces=false&share=false&height=65&appId" width="62" height="65" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true">
+                <a href="https://google.com" class="twitter-follow-button" data-show-count="false" data-via="mariuCSS"> Google+ </a>  
+                </iframe>
+
+
+              </div>
+
+              <div class="google button">
+                  <i class="icon">
+                    <i class="fa fa-google-plus"></i>
+                  </i>
+              <div class="slide">
+                  <p>  Google+ </p>
+                </div>
+      <!-- Place this tag where you want the +1 button to render. -->
+                <div class="g-follow" data-annotation="bubble" data-href="https://plus.google.com/+Enablingwp/" data-rel="publisher">
+                  <a href="https://google.com" class="twitter-follow-button" data-show-count="false" data-via="mariuCSS"> Google+ </a>
+                </div>
+      
+      <!-- Place this tag after the last +1 button tag. -->
+              <script type="text/javascript">
+                    (function() {
+                       var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                       po.src = 'https://apis.google.com/js/platform.js';
+                        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                      })();
+              </script>
+              </div>
+                <div class="youtube button">
+                    <i class="icon">
+                      <i class="fa fa-youtube"></i>
+                    </i>
+                <div class="slide">
+                <p>  YouTube </p>
+                </div>
+                <div class="g-ytsubscribe" data-channel="techpingo" data-layout="default" data-count="default" data-onytevent="onYtEvent"><a href="https://youtube.com" class="twitter-follow-button" data-show-count="false" data-via="mariuCSS"> Youtube </a>
+                </div>
+                <script src="https://apis.google.com/js/platform.js"></script>
+                <script>
+                  function onYtEvent(payload) {
+                    if (payload.eventType == 'subscribe') {
+                      // Add code to handle subscribe event.
+                    } else if (payload.eventType == 'unsubscribe') {
+                    // Add code to handle unsubscribe event.
+                    }
+                    if (window.console) { // for debugging only
+                        window.console.log('YT event: ', payload);
+                      }
+                    }
+              </script>
+
+              </div>
+                <div class="twitter button">
+                    <i class="icon">
+                      <i class="fa fa-twitter"></i>
+                    </i>
+                  <div class="slide">
+                      <p>Twitter </p>
+                  </div>
+                    <a href="https://twitter.com/iamrahuldc" class="twitter-follow-button" data-show-count="false" data-via="mariuCSS"> Tweet </a>
+                <script>
+                  !function(d,s,id){
+                    var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+                      if(!d.getElementById(id)){
+                        js=d.createElement(s);
+                        js.id=id;
+                        js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+                 </script>
+                </div>
+      
+            </div>  
+        </div>
+        <div class="col-xs-6 col-md-3">
+          <ul class="footer-list">
+          <li><a class="list-element" href="index.html">Home</a> </li>
+          <li ><a class="list-element" href="about.html">About</a> </li>
+          <li ><a class="list-element" href="department.html">Department</a></li>
+          <li><a class="list-element" href="staff.html">Staff</a> </li>
+          <li><a class="list-element" href="research.html">Research</a> </li>
+          <li><a class="list-element" href="weekly.html">Weekly Schedule</a> </li>  
+        </ul>
+
+        </div>
+      </div>  
+    </footer>
+    <!-- this is our template
+      it displays an image with a title and author headings
+      the bits in curly brackets {{}} are template expressions -->
+    
+
+  <script id="template0" type="text/x-handlebars-template">
+    <div class="mainView">
+      <h1>About Us</h1>
+
+          <br />
+          <h3 >Vision</h3>
+            <p>Green Life Hospital will be an innovative, leading regional health system dedicated to advancing the health and transforming the lives of the people we serve through excellent accessiblity, patient-centered, caring service; and unmatched physician and employee commitment.
+            </p>
+          <h3>Mission</h3>
+            <p>The Mission of Reading Hospital is to provide compassionate, accessible, high quality, cost effective healthcare to the community; to promote health; to educate healthcare professionals; and to participate in appropriate clinical research.
+            </p>
+          <h3>Values</h3>
+            <p>We're committed to setting ambitious goals and move healthcare and our communities forward. Everyone working together collaboratively. In our regard for, and actions toward, our communities, patients and each other. Acting in honest, forthright and fiscally responsible ways
+            </p>
+    <div class="col-xs-12 col-md-6">
+        <div 0class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="image/img_about1.jpg">
+              <div class="desc"><h2>Emergency Unit</h1></div>
+              <img src="image/img_about1.jpg" alt="emergency-unit" width="600" height="400">
+            </a>
+            <div class="desc desca">Photo credit to Marlon-Lara</div>
+          </div>
+        </div>
+        </div>
+
+        <div class="col-xs-12 col-md-6">
+        <div 0class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="image/img_about2.jpg">
+              <div class="desc"><h2>Meet out Teem</h1></div>
+              <img src="image/img_about2.jpg" alt="meet out team" width="600" height="400">
+            </a>
+            <div class="desc desca">Photo credit to rawpixel unsplash</div>
+          </div>
+        </div>
+        </div>
+  </script>
+
+  <!-- javascript code to fill the template -->
+    <script id="template1" type="text/x-handlebars-template">
+    <div style="text-align: center;" class="mainView">
+      <h1 >We welcome you to our community</h1>
+      <div class="col-md-12">
+        <div class="col-xs-12 col-md-12">
+
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdid1-Ng5lTVcNBuhO4xmhzIAMlYeTTxO6thdDUO5NkA5JPFw/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+      </div>
+        
+    </ div>
+      <div class="col-xs-12 col-md-12">
+        <div 0class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="contact-form.html">
+              
+              <img src="image/img_about3.jpg" alt="meet out team" width="600" height="400">
+            </a>
+            <div class="desc desca">Photo credit to Nuyen Nguyen</div>
+          </div>
+        </div>
+        </div>
+
+        <div class="col-xs-12 col-md-12">
+
+          <h3>Disease of the day:</h3>
+          <p style="text-align: left; margin-top: 10pt;">
+Meningitis is an inflammation (swelling) of the protective membranes covering the brain and spinal cord. A bacterial or viral infection of the fluid surrounding the brain and spinal cord usually causes the swelling. However, injuries, cancer, certain drugs, and other types of infections also can cause meningitis. It is important to know the specific cause of meningitis because the treatment differs depending on the cause.
+Source- http://www.cdc.gov
+</p>
+        </div>
+  </script>
+  <script id="template2" type="text/x-handlebars-template">
+    <div class="mainView">
+    </ div>
+    <div class="col-xs-12 col-md-12">
+        <div 0class="responsive">
+          <div class="gallery">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3753.7290324102873!2d126.66553406141026!3d37.375299740640784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b771dcd77b371%3A0xd5efad8063365109!2sIncheon+Global+Campus!5e1!3m2!1sen!2skr!4v1543827904322" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div class="desc desca">Photo credit to Google</div>
+          </div>
+        </div>
+        </div>
+    
+  </script>
+    <script id="template3" type="text/x-handlebars-template">
+    <div class="mainView">
+      <h1  style="text-align: center;">Career</h1>
+       <div class="col-xs-12 col-md-12">
+        <div 0class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="image/img_about5.jpg">
+              <div class="desc"><h2>We provide a dirvese working invironment</h1></div>
+              <img src="image/img_about5.jpg" alt="dirvese working invironment" width="600" height="400">
+            </a>
+            <div class="desc desca">Photo credit to rawpixel unsplash</div>
+          </div>
+        </div>
+        </div>
+      <div class="col-md-12">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Jobs</th>
+        <th>Qualification</th>
+        <th>Salary</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Nurse</td>
+        <td>College Degree</td>
+        <td>$20 000/yr</td>
+      </tr>      
+      <tr class="success">
+        <td>Librarian Supervisor</td>
+        <td>Degree/ Equivalent</td>
+        <td>$23 000/yr</td>
+      </tr>
+      <tr class="danger">
+        <td>HR manager</td>
+        <td>MBA + any medical degree</td>
+        <td>$100 000/yr</td>
+      </tr>
+      <tr class="info">
+        <td>Accountant Assistant</td>
+        <td> Accounts Degree/ Equivalent</td>
+        <td>$50 000/yr</td>
+      </tr>
+      <tr class="warning">
+        <td>Dentist</td>
+        <td>Doctor's degree+ 4 yr expirience</td>
+        <td>$200 000/yr</td>
+      </tr>
+      <tr class="active">
+        <td>Software Engineer</td>
+        <td>Computer Science Degree</td>
+        <td>$500 000/yr</td>
+      </tr>
+      <tr class="active">
+        <td>Statistician</td>
+        <td>Mathematics Degree</td>
+        <td>$499 999/yr</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+  </script>
+
+  <script id="template4" type="text/x-handlebars-template">
+    <div class="mainView">
+      <h1>Message</h1>
+      <p style="text">
+
+<b>Dr. Hannah's patient, a hypertensive mother, was in a cesarean section delivery when her twins were born conjoined. Dr. Hannah has successfully operated on the conjoined twins. The parents of the beautiful newborns can't thank enough the ob/gyn department relentless effort in saving their babies. Moreover, Dr. Hannah had 16 surgeries and a total of 38 OPD visits over the week, making her Greenlife's Doctor of the Week!</b>
+
+        </p>
+      
+        
+    </ div>
+
+
+            
+  </script>
+
+
+
+  <script type="text/javascript">
+    var counter = 0;
+
+    $(".navigate").click(function(){
+      // copy the html from the thumbnail (this)
+      // to the main viwer
+      var id = $(this).attr("id");
+
+      // parseInt converts it to a number (integer)
+      counter = parseInt(id.slice(-1));
+      // generate HTML from the data
+      var temp = "#template" + counter;
+
+      var source   = $(temp).html();
+
+    // compile the template so we can use it
+    var template = Handlebars.compile(source);
+
+    // create some data
+    var data = {
+      mainView:"haha",
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/The_Earth_seen_from_Apollo_17.jpg/600px-The_Earth_seen_from_Apollo_17.jpg ", 
+      title:"The Earth seen from Apollo 17",
+      author:"Ed g2s"
+    };
+
+      var html    = template(data);
+
+      // add the HTML to the content div
+      $('#content').html(html);
+
+
+
+      // $("#content").html( 
+        // $(this).html());
+
+      // get the id of this element so we can
+      // get hold of its number
+      var id = $(this).attr("id");
+
+      // set the counter to the number of the 
+      // chapter we selected. 
+      // We get this by taking the last charcter
+      // of the id and convert it to a number
+      // id.slice gets a subsection of the string
+      // passing in -1 means we get just the
+      // last character
+      // parseInt converts it to a number (integer)
+      counter = parseInt(id.slice(-1));
+    });    
+    var source   = $('#template0').html();
+
+    // compile the template so we can use it
+    var template = Handlebars.compile(source);
+
+    // create some data
+    var data = {
+      mainView:"haha",
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/The_Earth_seen_from_Apollo_17.jpg/600px-The_Earth_seen_from_Apollo_17.jpg ", 
+      title:"The Earth seen from Apollo 17",
+      author:"Ed g2s"
+    };
+
+      var html    = template(data);
+
+      // add the HTML to the content div
+      $('#content').html(html);
+
+
+   
+    // virtually click the first chapter to select it
+
+    // grab our template code from the DOM
+    
+    // generate HTML from the data
+  </script>
+
+</body>
